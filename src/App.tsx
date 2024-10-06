@@ -7,6 +7,9 @@ import TestComponent from './TestComponent';
 import PropParent from './PropParent';
 import AppClass from './AppClass';
 import ParentComponent from './ParentComponent';
+import UseStateHook from './Hooks/useStateHook';
+import UseEffectHook from './Hooks/useEffectHook';
+import UseEffectDependencies from "./Hooks/useEffectDependencies"
 
 
 
@@ -78,8 +81,12 @@ function App() {
   //   <AppRoute></AppRoute>
   //   );
 
+  //Hook - useState()
   return (
-    <ParentComponent></ParentComponent>
+    // <UseStateHook></UseStateHook>
+    //<UseEffectHook></UseEffectHook>
+    <UseEffectDependencies></UseEffectDependencies>
+
   );
 
 }
