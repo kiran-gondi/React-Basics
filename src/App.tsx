@@ -3,6 +3,10 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import ChildComponent from './ChildComponent';
+import TestComponent from './TestComponent';
+import PropParent from './PropParent';
+import AppClass from './AppClass';
+import ParentComponent from './ParentComponent';
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -31,7 +35,8 @@ function App() {
       </p>
     </>
   )*/
-  //const props = {name: "Robin", purpose:"INterview"};
+  
+  const props = {name: "Robin", purpose:"INterview"};
   const numbers = [1, 2, 3, 4, 5];
   return (
     // <div>
@@ -51,12 +56,21 @@ function App() {
     //   <ChildComponent {...props}/>
     // </>
     
+    // <>
+    //   {
+    //     numbers.map((numbers)=> (numbers * 2))
+    //   }
+    // </>
+
     <>
-      {
-        numbers.map((numbers)=> (numbers * 2))
-      }
+      <ChildComponent {...props}/>
+      <TestComponent></TestComponent>
+      <PropParent ></PropParent>
+      <AppClass></AppClass>
+      <ParentComponent></ParentComponent>
     </>
 
+    
   );
 }
 
