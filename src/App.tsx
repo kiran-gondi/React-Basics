@@ -31,7 +31,8 @@ function App() {
       </p>
     </>
   )*/
-  const props = {name: "Robin", purpose:"INterview"};
+  //const props = {name: "Robin", purpose:"INterview"};
+  const numbers = [1, 2, 3, 4, 5];
   return (
     // <div>
     //   <h1>Hello</h1>
@@ -46,9 +47,16 @@ function App() {
     </>*/
     /* </Fragment> */
 
+    // <>
+    //   <ChildComponent {...props}/>
+    // </>
+    
     <>
-      <ChildComponent {...props}/>
+      {
+        numbers.map((numbers)=> (numbers * 2))
+      }
     </>
+
   );
 }
 
