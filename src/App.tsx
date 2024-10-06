@@ -8,6 +8,8 @@ import PropParent from './PropParent';
 import AppClass from './AppClass';
 import ParentComponent from './ParentComponent';
 
+
+
 function App() {
   //const [count, setCount] = useState(0);
 
@@ -36,9 +38,9 @@ function App() {
     </>
   )*/
   
-  const props = {name: "Robin", purpose:"INterview"};
-  const numbers = [1, 2, 3, 4, 5];
-  return (
+  // const props = {name: "Robin", purpose:"INterview"};
+  // const numbers = [1, 2, 3, 4, 5];
+  //return (
     // <div>
     //   <h1>Hello</h1>
     //   <p>World</p>
@@ -62,16 +64,24 @@ function App() {
     //   }
     // </>
 
-    <>
-      <ChildComponent {...props}/>
-      <TestComponent></TestComponent>
-      <PropParent ></PropParent>
-      <AppClass></AppClass>
-      <ParentComponent></ParentComponent>
-    </>
+    // <>
+    //   <ChildComponent {...props}/>
+    //   <TestComponent></TestComponent>
+    //   <PropParent ></PropParent>
+    //   <AppClass></AppClass>
+    //   <ParentComponent></ParentComponent>
+    // </>
+  //);
 
-    
+  //React-Routing
+  // return (
+  //   <AppRoute></AppRoute>
+  //   );
+
+  return (
+    <ParentComponent></ParentComponent>
   );
+
 }
 
 export default App;
