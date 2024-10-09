@@ -9,7 +9,9 @@ import AppClassComponent from './Component-Props/AppClass';
 import ParentComponent from './Component-Props/ParentComponent';
 import UseStateHook from './Hooks/useStateHook';
 import UseEffectHook from './Hooks/useEffectHook';
-import UseEffectDependencies from "./Hooks/useEffectDependencies"
+import UseEffectDependencies from "./Hooks/useEffectDependencies";
+import Parent from "./Hooks/useContextParent";
+import UseReducer from './Hooks/useReducerHook';
 
 
 
@@ -81,13 +83,12 @@ function App() {
   //   <AppRoute></AppRoute>
   //   );
 
-  //Hook - useState() useEffect() useContext()/useReducer()
-  // return (
+  //Hook - useState()
+ // return (
   //   // <UseStateHook></UseStateHook>
   //   //<UseEffectHook></UseEffectHook>
   //   <UseEffectDependencies></UseEffectDependencies>
   // );
-  
 
 }
 
