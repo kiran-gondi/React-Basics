@@ -5,9 +5,9 @@ The render method in a class component is responsible for returning JSX.
 */
 import {Component} from 'react';
 
-class AppClass extends Component{
+class AppClassComponent extends Component{
     render(){
         return <h1>Happy Hunting!</h1>;
     }
 }
-export default AppClass; 
+export default AppClassComponent; 

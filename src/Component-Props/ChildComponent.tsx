@@ -5,6 +5,7 @@ class ChildComponent extends Component{
         return(
             <div>
                 <h2>Message: {this.props.message}</h2>
+                {/* <h2>Message: {this.props.name}  {this.props.purpose}</h2> */}
             </div>
         );
     }
