@@ -25,7 +25,7 @@ const UseReducer = () => {
 };
 
 // Reducer function
-const fnReducer = (state, action) => {
+const fnReducer = (state: {count:number}, action:{type:any}) => {
     switch (action.type) {
       case "INCREMENT":
         return { count: state.count + 1 };
